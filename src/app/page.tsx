@@ -1,21 +1,26 @@
-'use client';
+"use client";
 
 import { useRouter } from "next/navigation";
+import Spline from "@splinetool/react-spline";
 
 export default function LandingPage() {
   const router = useRouter();
 
   return (
-    <section className="flex flex-col items-center justify-center h-screen bg-gray-100 text-center">
-      <div className="mb-8">
-        <h1 className="text-4xl font-bold">Welcome Animation Placeholder</h1>
+    <section className="relative w-full h-screen overflow-hidden">
+      <Spline
+        scene="https://prod.spline.design/dLu3y-E8wDdh5CMW/scene.splinecode"
+        className="absolute inset-0 w-full h-full"
+      />
+
+      <div className="absolute bottom-8 w-full flex justify-center">
+        <button
+          onClick={() => router.push("/home")}
+          className="px-6 py-2 bg-orange-500 text-white rounded hover:bg-orange-600"
+        >
+          Explore Now
+        </button>
       </div>
-      <button
-        onClick={() => router.push("/home")}
-        className="px-6 py-2 bg-orange-500 text-white rounded hover:bg-orange-600"
-      >
-        Explore Now
-      </button>
     </section>
   );
 }
