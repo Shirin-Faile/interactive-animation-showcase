@@ -7,8 +7,8 @@ export default function GalleryPage() {
   const router = useRouter();
 
   const handleCardClick = (cardName: string) => {
-    if (cardName === "Keyboard - Card") {
-      router.push("/keyboard");
+    if (cardName === "Lego - Card") {
+      router.push("/lego");
     } else if (cardName === "Bee-Card") {
       router.push("/bee");
     } else if (cardName === "ShapeBlend - Card") {
