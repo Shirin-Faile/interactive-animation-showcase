@@ -5,7 +5,6 @@ export default function Header() {
             <nav className="w-full sm:w-auto text-center sm:text-left">
                 <a href="/home" className="mx-2 sm:mx-4 hover:underline block sm:inline">Home</a>
                 <a href="/gallery" className="mx-2 sm:mx-4 hover:underline block sm:inline">Gallery</a>
-                <a href="/about" className="mx-2 sm:mx-4 hover:underline block sm:inline">About Me</a>
             </nav>
         </header>
     );
