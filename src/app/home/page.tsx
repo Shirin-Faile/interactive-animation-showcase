@@ -18,9 +18,9 @@ export default function HomePage() {
         <p className="text-base sm:text-lg text-gray-600 leading-relaxed">
           This page invites you to explore the magic of interactive design. Meet
           our delightful gummy figures, who come alive as they follow your every
-          move, adding a spark of wonder to your experience. Here, you'll
+          move, adding a spark of wonder to your experience. Here, youll
           discover a showcase of animations that blend creativity with
-          technology, promising a playful journey that’s both engaging and
+          technology, promising a playful journey thats both engaging and
           inspiring. Let your curiosity guide you, and expect surprises at every
           click, scroll, and movement!
         </p>

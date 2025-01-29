@@ -1,6 +1,7 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import PathnameProvider from "../components/PathnameProvider";
+import Script from "next/script"; // ✅ Import Next.js Script
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -25,10 +26,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <script
+        {/* ✅ Use Next.js Script component */}
+        <Script
           type="module"
           src="https://unpkg.com/@splinetool/viewer@1.9.56/build/spline-viewer.js"
-        ></script>
+          strategy="beforeInteractive" // ✅ Ensures it loads before hydration
+        />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col min-h-screen`}
